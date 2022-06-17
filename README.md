@@ -20,6 +20,8 @@
 
 ## How to seperate and group
 
+- The [list](unsorted_cities.json) is converted to [City] into `cities`
+
 ```swift
 var cityDirectory: [Character:[City]] = [:]
 
