@@ -2,6 +2,7 @@
 
 - There is a [list](unsorted_cities.json) containing around 200,000 entries in JSON format.
 - The list will be separated and grouped by the first prefix. The list is sorted in alphabetical order.
+  - Instead of loading all list to the memory, this function will load only the first prefix has changed before filtering
 - This app displays the information
   - A map with a search field.
   - The UI is responsive while typing.
