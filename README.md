@@ -56,13 +56,27 @@ for directory in sortedCityDirectory {
 - See the full code [here](Shared/City/CitySession.swift)
 
 ```swift
-guard loadCityIfNeeded(from: Character(firstLetter)) else { return nil }
-        guard let lowestIndex = bsearchLowestIndex(for: text),
-              let largestIndex = bsearchLargestIndex(for: text) else {
-            logger.log("\(#function) search not found")
-            return []
-        }
-        return Array(letterSortedCity[lowestIndex...largestIndex])
+/// Search all cities that start with specifix text
+///
+/// Time complexity: O(logn)
+func search(with text: String) -> [City]? {
+    guard !text.isEmpty else {
+        releaseCities()
+        logger.log("call \(#function) with empty string")
+        return nil
+    }
+    guard let firstLetter = text.first?.lowercased() else {
+        logger.log("\(#function) can't get firstLetter for open the city's 1-prefix hierarchy")
+        return nil
+    }
+    guard loadCityIfNeeded(from: Character(firstLetter)) else { return nil }
+    guard let lowestIndex = bsearchLowestIndex(for: text),
+          let largestIndex = bsearchLargestIndex(for: text) else {
+        logger.log("\(#function) search not found")
+        return []
+    }
+    return Array(letterSortedCity[lowestIndex...largestIndex])
+}
 ```
 
 ### func loadCityIfNeeded(from:)
