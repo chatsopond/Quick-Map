@@ -50,8 +50,50 @@ for directory in sortedCityDirectory {
 
 ## Search the matched prefix
 
-- Use the binary search technique
+- Load the 1 prefix then
+- Filter with the binary search technique
   - Find lowest and largest indices (Range)
+- See the full code [here](Shared/City/CitySession.swift)
+
+```swift
+guard loadCityIfNeeded(from: Character(firstLetter)) else { return nil }
+        guard let lowestIndex = bsearchLowestIndex(for: text),
+              let largestIndex = bsearchLargestIndex(for: text) else {
+            logger.log("\(#function) search not found")
+            return []
+        }
+        return Array(letterSortedCity[lowestIndex...largestIndex])
+```
+
+### func loadCityIfNeeded(from:)
+
+```swift
+/// Return the ready status of load the alphabetical ordered city list from file (1-prefix hierarchy) if needed
+private func loadCityIfNeeded(from letter: Character) -> Bool {
+    guard self.letter != letter else {
+        logger.log("\(#function) skip load \(letter)-CityDictionary")
+        return true
+    }
+    guard let cityURL = Bundle.main.url(forResource: "\(letter)", withExtension: "json") else {
+        logger.log("\(#function) can't find the \(letter)")
+        return false
+    }
+    guard let cityData = try? Data(contentsOf: cityURL) else {
+        logger.log("\(#function) can't init data from \(cityURL)")
+        return false
+    }
+    guard let citiesStartWithLetter = try? JSONDecoder().decode([City].self, from: cityData) else {
+        logger.log("\(#function) can't decode the json to [City]")
+        return false
+    }
+    letterSortedCity = citiesStartWithLetter
+    self.letter = letter
+    logger.log("load completed, count: \(self.letterSortedCity.count)")
+    return true
+}
+```
+
+### func bsearchLowestIndex(for:)
 
 ```swift
 /// Search the **lowest** index of citiy that has a specifix prefix
