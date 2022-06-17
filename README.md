@@ -5,7 +5,7 @@
 - This app displays the information
   - A map with a search field.
   - The UI is responsive while typing.
-  - The list is updated with every character changed the filter.
+  - The list is updated with every character changed in the filter.
   - Tapping the cell will show the location of the entries.
   - **Time efficiency for filter algorithm is better than linear**
 
