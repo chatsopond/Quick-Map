@@ -1,6 +1,6 @@
 # Quick-Map
 
-- There a list containg around 200,000 entries in JSON format.
+- There a [list](unsorted_cities.json) containg around 200,000 entries in JSON format.
 - The list will be seperated and grouped by first prefix. The list is sorted in alphabetical order.
 - This app display the information
   - A map with a search field.
@@ -8,6 +8,10 @@
   - The list is updated with every character changed the filter.
   - Tapping the cell will show the detail of the entries.
   - **Time efficiency for filter algorithm is better than linear**
+
+## Demo
+
+![Demo](demo.gif)
 
 ## How to seperate and group
 
