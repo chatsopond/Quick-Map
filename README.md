@@ -21,6 +21,7 @@
 ## How to seperate and group
 
 - The [list](unsorted_cities.json) is converted to `[City]` into `cities`
+- Then export to [here](Shared/City/City%201-Prefix%20Hierarchy)
 
 ```swift
 var cityDirectory: [Character:[City]] = [:]
