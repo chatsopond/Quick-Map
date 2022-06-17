@@ -1,8 +1,8 @@
 # Quick-Map
 
-- There a [list](unsorted_cities.json) containing around 200,000 entries in JSON format.
-- The list will be separated and grouped by first prefix. The list is sorted in alphabetical order.
-- This app display the information
+- There is a [list](unsorted_cities.json) containing around 200,000 entries in JSON format.
+- The list will be separated and grouped by the first prefix. The list is sorted in alphabetical order.
+- This app displays the information
   - A map with a search field.
   - The UI is responsive while typing.
   - The list is updated with every character changed the filter.
