@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "606E479B-8CAA-422E-A518-79C7A599D5A4",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Quick Map.xcodeproj",
+        "identifier" : "6BCDB41C285C8BCA00B2E975",
+        "name" : "Quick Map Tests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Quick Map.xcodeproj",
+        "identifier" : "6BCDB429285C8BF400B2E975",
+        "name" : "Quick Map UITests"
+      }
+    }
+  ],
+  "version" : 1
+}

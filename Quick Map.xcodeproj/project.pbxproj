@@ -104,7 +104,26 @@
 		6BCDB414285C812D00B2E975 /* Color+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCDB3B4285C812D00B2E975 /* Color+SwiftUI.swift */; };
 		6BCDB415285C812D00B2E975 /* CardRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCDB3B6285C812D00B2E975 /* CardRectangle.swift */; };
 		6BCDB416285C812D00B2E975 /* LegacyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCDB3B7285C812D00B2E975 /* LegacyTextField.swift */; };
+		6BCDB420285C8BCA00B2E975 /* CitySessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCDB41F285C8BCA00B2E975 /* CitySessionTests.swift */; };
+		6BCDB42D285C8BF400B2E975 /* Quick_Map_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCDB42C285C8BF400B2E975 /* Quick_Map_UITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6BCDB421285C8BCA00B2E975 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BCDB33A285C80E500B2E975 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BCDB341285C80E500B2E975;
+			remoteInfo = "Quick Map";
+		};
+		6BCDB430285C8BF400B2E975 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BCDB33A285C80E500B2E975 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BCDB341285C80E500B2E975;
+			remoteInfo = "Quick Map";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6BCDB342285C80E500B2E975 /* Quick Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quick Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -205,10 +224,30 @@
 		6BCDB3B4285C812D00B2E975 /* Color+SwiftUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+SwiftUI.swift"; sourceTree = "<group>"; };
 		6BCDB3B6285C812D00B2E975 /* CardRectangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardRectangle.swift; sourceTree = "<group>"; };
 		6BCDB3B7285C812D00B2E975 /* LegacyTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegacyTextField.swift; sourceTree = "<group>"; };
+		6BCDB41D285C8BCA00B2E975 /* Quick Map Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quick Map Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BCDB41F285C8BCA00B2E975 /* CitySessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySessionTests.swift; sourceTree = "<group>"; };
+		6BCDB42A285C8BF400B2E975 /* Quick Map UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quick Map UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BCDB42C285C8BF400B2E975 /* Quick_Map_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quick_Map_UITests.swift; sourceTree = "<group>"; };
+		6BCDB435285C8C8600B2E975 /* UnitTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnitTests.xctestplan; sourceTree = "<group>"; };
+		6BCDB436285C8C9800B2E975 /* FullTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = FullTests.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6BCDB33F285C80E500B2E975 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BCDB41A285C8BCA00B2E975 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BCDB427285C8BF400B2E975 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -221,8 +260,12 @@
 		6BCDB339285C80E500B2E975 = {
 			isa = PBXGroup;
 			children = (
+				6BCDB435285C8C8600B2E975 /* UnitTests.xctestplan */,
+				6BCDB436285C8C9800B2E975 /* FullTests.xctestplan */,
 				6BCDB354285C812D00B2E975 /* Shared */,
 				6BCDB344285C80E500B2E975 /* Quick Map */,
+				6BCDB41E285C8BCA00B2E975 /* Quick Map Tests */,
+				6BCDB42B285C8BF400B2E975 /* Quick Map UITests */,
 				6BCDB343285C80E500B2E975 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -231,6 +274,8 @@
 			isa = PBXGroup;
 			children = (
 				6BCDB342285C80E500B2E975 /* Quick Map.app */,
+				6BCDB41D285C8BCA00B2E975 /* Quick Map Tests.xctest */,
+				6BCDB42A285C8BF400B2E975 /* Quick Map UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -378,6 +423,22 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		6BCDB41E285C8BCA00B2E975 /* Quick Map Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6BCDB41F285C8BCA00B2E975 /* CitySessionTests.swift */,
+			);
+			path = "Quick Map Tests";
+			sourceTree = "<group>";
+		};
+		6BCDB42B285C8BF400B2E975 /* Quick Map UITests */ = {
+			isa = PBXGroup;
+			children = (
+				6BCDB42C285C8BF400B2E975 /* Quick_Map_UITests.swift */,
+			);
+			path = "Quick Map UITests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -398,6 +459,42 @@
 			productReference = 6BCDB342285C80E500B2E975 /* Quick Map.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6BCDB41C285C8BCA00B2E975 /* Quick Map Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BCDB423285C8BCA00B2E975 /* Build configuration list for PBXNativeTarget "Quick Map Tests" */;
+			buildPhases = (
+				6BCDB419285C8BCA00B2E975 /* Sources */,
+				6BCDB41A285C8BCA00B2E975 /* Frameworks */,
+				6BCDB41B285C8BCA00B2E975 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BCDB422285C8BCA00B2E975 /* PBXTargetDependency */,
+			);
+			name = "Quick Map Tests";
+			productName = "Quick Map Tests";
+			productReference = 6BCDB41D285C8BCA00B2E975 /* Quick Map Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6BCDB429285C8BF400B2E975 /* Quick Map UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BCDB432285C8BF400B2E975 /* Build configuration list for PBXNativeTarget "Quick Map UITests" */;
+			buildPhases = (
+				6BCDB426285C8BF400B2E975 /* Sources */,
+				6BCDB427285C8BF400B2E975 /* Frameworks */,
+				6BCDB428285C8BF400B2E975 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BCDB431285C8BF400B2E975 /* PBXTargetDependency */,
+			);
+			name = "Quick Map UITests";
+			productName = "Quick Map UITests";
+			productReference = 6BCDB42A285C8BF400B2E975 /* Quick Map UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -410,6 +507,14 @@
 				TargetAttributes = {
 					6BCDB341285C80E500B2E975 = {
 						CreatedOnToolsVersion = 13.4.1;
+					};
+					6BCDB41C285C8BCA00B2E975 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 6BCDB341285C80E500B2E975;
+					};
+					6BCDB429285C8BF400B2E975 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 6BCDB341285C80E500B2E975;
 					};
 				};
 			};
@@ -427,6 +532,8 @@
 			projectRoot = "";
 			targets = (
 				6BCDB341285C80E500B2E975 /* Quick Map */,
+				6BCDB41C285C8BCA00B2E975 /* Quick Map Tests */,
+				6BCDB429285C8BF400B2E975 /* Quick Map UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -525,6 +632,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6BCDB41B285C8BCA00B2E975 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BCDB428285C8BF400B2E975 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -546,7 +667,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6BCDB419285C8BCA00B2E975 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BCDB420285C8BCA00B2E975 /* CitySessionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BCDB426285C8BF400B2E975 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BCDB42D285C8BF400B2E975 /* Quick_Map_UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6BCDB422285C8BCA00B2E975 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BCDB341285C80E500B2E975 /* Quick Map */;
+			targetProxy = 6BCDB421285C8BCA00B2E975 /* PBXContainerItemProxy */;
+		};
+		6BCDB431285C8BF400B2E975 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BCDB341285C80E500B2E975 /* Quick Map */;
+			targetProxy = 6BCDB430285C8BF400B2E975 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		6BCDB34E285C80E600B2E975 /* Debug */ = {
@@ -723,6 +873,76 @@
 			};
 			name = Release;
 		};
+		6BCDB424285C8BCA00B2E975 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HB4FTR388G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chatsopond.Quick-Map-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quick Map.app/Quick Map";
+			};
+			name = Debug;
+		};
+		6BCDB425285C8BCA00B2E975 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HB4FTR388G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chatsopond.Quick-Map-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quick Map.app/Quick Map";
+			};
+			name = Release;
+		};
+		6BCDB433285C8BF400B2E975 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HB4FTR388G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chatsopond.Quick-Map-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Quick Map";
+			};
+			name = Debug;
+		};
+		6BCDB434285C8BF400B2E975 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HB4FTR388G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chatsopond.Quick-Map-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Quick Map";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -740,6 +960,24 @@
 			buildConfigurations = (
 				6BCDB351285C80E600B2E975 /* Debug */,
 				6BCDB352285C80E600B2E975 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BCDB423285C8BCA00B2E975 /* Build configuration list for PBXNativeTarget "Quick Map Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BCDB424285C8BCA00B2E975 /* Debug */,
+				6BCDB425285C8BCA00B2E975 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BCDB432285C8BF400B2E975 /* Build configuration list for PBXNativeTarget "Quick Map UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BCDB433285C8BF400B2E975 /* Debug */,
+				6BCDB434285C8BF400B2E975 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

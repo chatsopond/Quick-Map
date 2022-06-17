@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "44AD3637-AFA2-47E9-BED8-E34682ED798C",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Quick Map.xcodeproj",
+        "identifier" : "6BCDB41C285C8BCA00B2E975",
+        "name" : "Quick Map Tests"
+      }
+    }
+  ],
+  "version" : 1
+}
