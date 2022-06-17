@@ -9,6 +9,11 @@
   - Tapping the cell will show the location of the entries.
   - **Time efficiency for filter algorithm is better than linear**
 
+## Requirements
+
+- Xcode Version 13.4.1 (13F100)
+- iOS 14
+
 ## Demo
 
 ![Demo](demo.gif)
