@@ -6,7 +6,7 @@
   - A map with a search field.
   - The UI is responsive while typing.
   - The list is updated with every character changed the filter.
-  - Tapping the cell will show the detail of the entries.
+  - Tapping the cell will show the location of the entries.
   - **Time efficiency for filter algorithm is better than linear**
 
 ## Demo
